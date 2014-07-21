@@ -1,5 +1,5 @@
 def convertir_numero_a_palabra(numero)
-	if numero.to_i<9
+	if numero.to_i<=9
   	return numero_un_digito(numero)
   else
 		return numero_dos_digito(numero)
@@ -25,7 +25,7 @@ def numero_un_digito(numero)
 	when "7"
 		then return "siete"
 	when "8"
-		return "ocho"
+		then return "ocho"
 	when "9"
 		then return "nueve"
 	end

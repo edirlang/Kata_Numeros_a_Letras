@@ -61,5 +61,29 @@ def numero_dos_digito(numero)
 		then return "treinta"
 	when 31..39
 		then return "treinta y #{numero_un_digito(numero[1])}"
+	when 40
+		then return "cuarenta"
+	when 41..49
+		then return "cuarenta y #{numero_un_digito(numero[1])}"
+	when 50
+		then return "cincuenta"
+	when 51..59
+		then return "cincuenta y #{numero_un_digito(numero[1])}"
+	when 60
+		then return "sesenta"
+	when 61..69
+		then return "sesenta y #{numero_un_digito(numero[1])}"
+	when 70
+		then return "setenta"
+	when 71..79
+		then return "setenta y #{numero_un_digito(numero[1])}"
+	when 80
+		then return "ochenta"
+	when 81..89
+		then return "ochenta y #{numero_un_digito(numero[1])}"
+	when 90
+		then return "noventa"
+	when 91..99
+		then return "noventa y #{numero_un_digito(numero[1])}"
 	end
 end

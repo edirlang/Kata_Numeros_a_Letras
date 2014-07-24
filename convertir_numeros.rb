@@ -1,9 +1,11 @@
 def convertir_numero_a_palabra(numero)
 	if numero.to_i<=9
-  	return numero_un_digito(numero)
-  else
+  		return numero_un_digito(numero)
+  	elsif numero.to_i<=99
 		return numero_dos_digito(numero)
-  end
+  	else
+  		return numero_tres_digitos(numero)
+  	end
 end
 
 def numero_un_digito(numero)
@@ -85,5 +87,16 @@ def numero_dos_digito(numero)
 		then return "noventa"
 	when 91..99
 		then return "noventa y #{numero_un_digito(numero[1])}"
+	end
+end
+
+def numero_tres_digitos(numero)
+	case numero.to_i
+	when 100
+		then return "cien"
+	when 101..109
+		then return "ciento #{numero_un_digito(numero[2])}"
+	when 110..119
+		then return "ciento #{numero_dos_digito(numero[1,2])}"
 	end
 end

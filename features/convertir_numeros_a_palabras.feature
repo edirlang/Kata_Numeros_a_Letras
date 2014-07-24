@@ -150,3 +150,40 @@ Característica: Convertir numeros a su equivalente en palabras
         | 91     | noventa y uno      |
         | 94     | noventa y cuatro   |
         | 99     | noventa y nueve    |
+
+   Esquema del escenario: Convertir 100 al 109 a palabras
+    Dado el "<numero>"
+    Cuando se esta convirtiendo el numero a palabras
+    Entonces deberia ser "<palabra numero>"   
+
+      Ejemplos:
+        | numero | palabra numero  |
+        | 100     | cien           |
+        | 101     | ciento uno      |
+        | 102     | ciento dos      |
+        | 107     | ciento siete    |
+        | 104     | ciento cuatro   |
+        | 105     | ciento cinco    |
+        | 106     | ciento seis     |
+        | 101     | ciento uno      |
+        | 104     | ciento cuatro   |
+        | 109     | ciento nueve    |
+
+
+  Esquema del escenario: Convertir 110 al 119 a palabras
+    Dado el "<numero>"
+    Cuando se esta convirtiendo el numero a palabras
+    Entonces deberia ser "<palabra numero>"   
+
+      Ejemplos:
+        | numero | palabra numero      |
+        | 110     | ciento diez        |
+        | 111     | ciento once        |
+        | 112     | ciento doce        |
+        | 113     | ciento trece       |
+        | 114     | ciento catorce     |
+        | 115     | ciento quince      |
+        | 116     | ciento dieciseis   |
+        | 117     | ciento diecisiete  |
+        | 118     | ciento dieciocho   |
+        | 119     | ciento diecinueve  |
